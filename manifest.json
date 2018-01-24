@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Diarios Sin Interrupciones: Clarin y Ole",
+  "description": "Extension que permite visitar Clarín y Olé sin necesidad de registrarse para seguir leyendo noticias.",
+  "version": "0.0.1",
+  "author": "Marcos Ocon",
+  "short_name": "Diarios Sin Interrupciones",
+  "browser_action": {
+    "default_title": "Diarios Sin Interrupciones",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "css": [],
+      "js": ["content.js"]
+    }
+  ]
+}

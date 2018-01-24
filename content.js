@@ -6,7 +6,6 @@ function checkClarinModalVisibility() {
   let lockedElement = document.querySelector('.lock');
 
   if (tryCount === 5) {
-    console.log('trycount', tryCount);
     return;
   }
 
